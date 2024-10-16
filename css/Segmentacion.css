@@ -1,0 +1,351 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+:root{
+  --main-font: sans-serif;
+  --font-size: 16px;
+  --main-color: rgb(87, 190, 231);
+  --second-color: #2525256c;
+  --main-modal-color:  rgb(94, 94, 94);
+  --second-modal-color: #ffffff;
+  --container-width: 1200px;  /*Container a maxima anchura*/
+}
+
+html {
+  background-color: #ffffff;
+}
+
+h2 {
+  font-size: 1.724vw;
+}
+
+#inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#inicio > div {
+  margin-top: 1%;
+  border-radius: 5px;
+  font: 1.25em sans-serif;
+}
+
+#inicio > section {
+  display: flex;
+  margin-top: 2%;
+  justify-content: center;
+  align-items: center;
+}
+
+#nuevo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3% auto;
+  width: 50%;
+  padding: 2rem 0;
+  border: rgba(180, 180, 180, 0.8) solid 1px;
+  border-radius: 10px;  
+  text-align: center;
+}
+
+#nuevo > div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem;
+}
+
+#nuevo > div > * {
+  margin: 1rem auto;
+  font: 1.5vw sans-serif;
+}
+
+input[type="submit"] {
+  background-color: #00bfaa;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font: 1.5vw sans-serif;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+}
+
+.main > section {
+  width: fit-content;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.ram {
+  display: inline-flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  margin-right: 3rem;
+  width: fit-content;
+  height: 100vh;
+}
+
+.ram > article {
+  background-color: #ddd;
+  border: 1px solid #000;
+  width: 250px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.ram > article > span {
+  color: white;
+  font: .6em Georgia, "Bitstream Charter", "URW Bookman L",
+    "Century Schoolbook L", serif;
+  font-weight: bold;
+}
+
+.stats {
+  font: 1.1em Georgia, "Bitstream Charter", "URW Bookman L",
+    "Century Schoolbook L", serif;
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid #444;
+  margin-left: 3rem;
+  width: 250px;
+  height: 95vh;
+}
+
+.so {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #0f0;
+  flex-grow: 2;
+  width: inherit;
+  height: max-content;
+}
+
+.prog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #00f;
+  flex-grow: 4;
+  width: inherit;
+  height: max-content;
+}
+
+.mem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #f00;
+  flex-grow: 4;
+  width: inherit;
+  height: max-content;
+}
+
+.proc {
+  width: 65%;
+  display: grid;
+  grid-template-columns: 1fr repeat(4, 2fr);
+  border: #000 1px solid;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.proc > article {
+  background-color: #c8c8c8;
+  border: 1px solid #000;
+  height: 55px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.proc > article > span {
+  font: 1.03em Lucida Sans Unicode;
+}
+
+.segs {
+  width: 40%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: #000 1px solid;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.segs > article {
+  background-color: #c8c8c8;
+  border: 1px solid #000;
+  height: 55px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.segs > article > span {
+  font: 1.03em Lucida Sans Unicode;
+}
+
+.prc {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.prc > div {
+  width: 80%;
+  height: 2rem;
+  display: inline-block;
+  border: #444 3px solid;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.prc > div > div {
+  height: inherit;
+  margin: 0;
+  background-color: rgb(255, 187, 0);
+}
+
+.icons {
+  height: 85vh;
+  width: fit-content;
+  display: inline-grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-auto-flow: column;
+}
+
+.icons > figure {
+  margin-left: 0.2rem;
+  margin-top: 0.4rem;
+  padding: 1rem 1rem 0 1rem;
+  border-radius: 6px;
+}
+
+.icons > figure > img {
+  height: 10vh;
+  width: auto;
+}
+
+.icons > figure > figcaption {
+  display: flex;
+  align-items: center;
+  width: 10vh;
+  height: 5vh;
+  font: 1.724vh Lucida Sans Unicode;
+  text-align: center;
+  color: white;
+  text-shadow: -1px 1px 1.5px black, 1px -1px 1.5px black, 0 0 5px black;
+}
+
+.icons > figure:hover {
+  border: #99f dotted 1px;
+  background-color: rgba(180, 230, 255, 0.5);
+}
+
+.title{
+  font: 1.5em sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5rem;
+}
+
+.figclick {
+  background-color: rgba(180, 230, 255, 0.8);
+  border: #55e dotted 1px;
+  border-radius: 6px;
+}
+
+.none {
+  display: none;
+}
+
+.panel-btn{
+  position: fixed;
+  z-index: 999;
+  top: 1vh;
+  right: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  margin: 5px;
+}
+
+.panel{
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--second-modal-color);
+  transform: translate(0, -100%);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+}
+
+.panel.is-active{
+  transform: translate(0,0)
+}
+
+.menu{
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+h1{
+  width: fit-content;
+  margin: 30px auto 10px;
+  padding: 15px;
+  margin-bottom: 0;
+}
+
+.menu a{
+  padding: 2rem;
+  width: inherit;
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--main-modal-color);
+  transition: all 0.3s ease;
+  font-size: 35px;
+}
+
+.menu a:hover{
+  font-weight: bold;
+  color: var(--second-modal-color);
+  background-color: var(--main-modal-color);
+  font-size: 45px;
+}

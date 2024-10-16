@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/Navbar.css" />
+    <link rel="stylesheet" href="css/Paginacion.css" />
+    <title>Paginación</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img
+          src="https://icon-library.com/images/memory-icon/memory-icon-4.jpg"
+          alt="Gestion de Memoria RAM"
+        />
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="Segmentacion.html">Segmentación</a></li>
+          <li><a href="Paginacion.html">Paginación</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>PAGINACIÓN</h1>
+    <section class="main">
+      <div class="div__datos">
+        <div class="icons"></div>
+        <div class="SO">
+          <div>
+            <div>
+              <h2>SISTEMA OPERATIVO</h2>
+            </div>
+            <article class="article__DataSO dato"><span></span></article>
+            <article class="article__DataSO dato"><span></span></article>
+            <article class="article__DataSO dato"><span></span></article>
+            <article class="article__DataSO dato"><span></span></article>
+          </div>
+          <div>
+            <form id="nuevo">
+              <h2>Añadir Programa</h2>
+              <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" maxlength="30" required />
+                <label for="codigo">Tamaño de codigo (.text):</label>
+                <input type="number" name="codigo" id="codigo" min="0" required />
+                <label for="datos">Tamaño de datos (.data):</label>
+                <input type="number" name="datos" id="datos" min="0" required />
+                <label for="bss"> Tamaño de variables .bss:</label>
+                <input type="number" name="bss" id="bss" min="0" required />
+              </div>
+              <input type="submit" value="Crear" />
+            </form>
+          </div>
+        </div>
+        <div class="almacenamiento">
+          <div>
+            <h2>DATOS DE ALMACENAMIENTO</h2>
+          </div>
+          <article class="article__Almacenamiento usada dato">
+            <span>USADA: </span>
+          </article>
+          <article class="article__Almacenamiento libre dato">
+            <span>LIBRE: </span>
+          </article>
+        </div>
+        <div class="programa">
+          <div>
+            <h2>DATOS DE PROGRAMA</h2>
+          </div>
+          <article class="article__programa proceso dato">
+            <span>PROCESO: </span>
+          </article>
+          <article class="article__programa direccion dato">
+            <span>DIRECCIÓN: </span>
+          </article>
+          <article class="article__programa memoria dato">
+            <span>MEMORIA: </span>
+          </article>
+        </div>
+        <div class="tablaPaginas table">
+          <div>
+            <h2>Tabla de paginas</h2>
+          </div>
+        </div>
+        <div class="tablaMarcos table">
+          <div>
+            <h2>Tabla de marcos libres</h2>
+          </div>
+          <div class="contTablaMarcos"></div>
+        </div>
+      </div>
+      <div class="div__particiones">
+        <h2>RAM</h2>
+        <h2>DIRECCIONES BASE</h2>
+        <div class="ram"></div>
+        <div class="dirRamBase"></div>
+      </div>
+    </section>
+
+    <!-- <h2>DETALLES DEL PROGRAMA</h2>
+    <div class="proc">
+        <article><span>PID</span></article>
+        <article><span>Nombre</span></article>
+        <article><span>Tamaño en disco</span></article>
+        <article><span>Tamaño codigo</span></article>
+        <article><span>Datos inicializados</span></article>
+        <article><span>Datos sin inicializar</span></article>
+        <article><span>Memoria inicial</span></article>
+        <article><span>Memoria inicial (KiB)</span></article>
+    </div> -->
+
+    <!-- <a href="eVariables.html">Particiones variables</a> -->
+    <script src="js/Paginacion.js"></script>
+  </body>
+</html>
